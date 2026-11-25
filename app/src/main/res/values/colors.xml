@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- لوحة Modern Dev (على طراز Tokyo Night) -->
+    <color name="tx_bg">#1A1B26</color>
+    <color name="tx_surface">#16161E</color>
+    <color name="tx_surface_variant">#24283B</color>
+    <color name="tx_divider">#292E42</color>
+    <color name="tx_accent">#7AA2F7</color>
+    <color name="tx_accent_alt">#BB9AF7</color>
+    <color name="tx_text">#C0CAF5</color>
+    <color name="tx_text_dim">#565F89</color>
+    <color name="tx_danger">#F7768E</color>
+    <color name="tx_success">#9ECE6A</color>
+    <color name="tx_ripple">#337AA2F7</color>
+    <color name="tx_scroll">#667AA2F7</color>
 </resources>
