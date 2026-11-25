@@ -57,7 +57,7 @@ public class TermuxSessionsListViewController extends ArrayAdapter<TermuxSession
             return sessionRowView;
         }
 
-        boolean shouldEnableDarkTheme = ThemeUtils.shouldEnableDarkTheme(mActivity, NightMode.getAppNightMode().getName());
+        boolean shouldEnableDarkTheme = true;
 
         if (shouldEnableDarkTheme) {
             sessionTitleView.setBackground(
