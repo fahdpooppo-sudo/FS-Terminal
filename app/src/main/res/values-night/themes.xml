@@ -4,15 +4,24 @@
      https://material.io/develop/android/theming/dark
     -->
 
-    <!-- TermuxActivity DayNight NoActionBar theme. -->
-    <!-- See https://developer.android.com/training/material/theme.html for how to customize the Material theme. -->
-    <!-- NOTE: Cannot use "Light." since it hides the terminal scrollbar on the default black background. -->
+    <!-- TermuxApp Light DarkActionBar theme. -->
+    <style name="Theme.TermuxApp.Light.DarkActionBar" parent="Theme.BaseActivity.Light.DarkActionBar"/>
+    <!-- TermuxApp Light NoActionBar theme. -->
+    <style name="Theme.TermuxApp.Light.NoActionBar" parent="Theme.BaseActivity.Light.NoActionBar"/>
+
+    <!-- TermuxApp DayNight DarkActionBar theme. -->
+    <style name="Theme.TermuxApp.DayNight.DarkActionBar" parent="Theme.BaseActivity.DayNight.DarkActionBar"/>
+    <!-- TermuxApp DayNight NoActionBar theme. -->
+    <style name="Theme.TermuxApp.DayNight.NoActionBar" parent="Theme.BaseActivity.DayNight.NoActionBar"/>
+
+
+    <!-- TermuxActivity DayNight NoActionBar theme (Modern Dark). -->
     <style name="Theme.TermuxActivity.DayNight.NoActionBar" parent="Theme.TermuxApp.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/black</item>
-        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorPrimary">@color/tx_surface</item>
+        <item name="colorPrimaryVariant">@color/tx_surface</item>
 
-        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowBackground">@color/tx_bg</item>
 
         <!-- Avoid action mode toolbar pushing down terminal content when
              selecting text on pre-6.0 (non-floating toolbar). -->
@@ -27,14 +36,14 @@
 
         <!-- Left drawer. -->
         <item name="buttonBarButtonStyle">@style/TermuxActivity.Drawer.ButtonBarStyle.Dark</item>
-        <item name="termuxActivityDrawerBackground">@color/black</item>
-        <item name="termuxActivityDrawerImageTint">@color/white</item>
+        <item name="termuxActivityDrawerBackground">@color/tx_surface</item>
+        <item name="termuxActivityDrawerImageTint">@color/tx_text</item>
 
         <!-- Extra keys colors. -->
-        <item name="extraKeysButtonTextColor">@color/white</item>
-        <item name="extraKeysButtonActiveTextColor">@color/red_400</item>
-        <item name="extraKeysButtonBackgroundColor">@color/black</item>
-        <item name="extraKeysButtonActiveBackgroundColor">@color/grey_500</item>
+        <item name="extraKeysButtonTextColor">@color/tx_text</item>
+        <item name="extraKeysButtonActiveTextColor">@color/tx_accent</item>
+        <item name="extraKeysButtonBackgroundColor">@color/tx_surface</item>
+        <item name="extraKeysButtonActiveBackgroundColor">@color/tx_surface_variant</item>
     </style>
 
 </resources>
